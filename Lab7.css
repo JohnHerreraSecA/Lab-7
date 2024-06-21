@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures the body takes full height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background-color: #434141; /* Light background color */
+}
+
+.container {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: dropDown 1s ease-out; /* Animation for the drop-down effect */
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    font-family: 'Courier New';
+    flex-grow: 1; /* Makes the input take up remaining space */
+    margin-right: 10px;
+}
+
+button {
+    font-family: 'Courier New';
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: deepskyblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+li button {
+    margin-left: 10px;
+    background-color: #ff6961;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #ff5c5c;
+}
